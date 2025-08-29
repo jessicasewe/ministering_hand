@@ -44,6 +44,7 @@ export default function AboutPage() {
         style={{
           backgroundImage: "url('/holdinghands.png')",
         }}
+        id="about"
       >
         <div className="absolute inset-0 bg-black/10 z-0"></div>
 

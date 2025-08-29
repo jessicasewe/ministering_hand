@@ -98,7 +98,7 @@ const navigationItems: NavItem[] = [
       },
       {
         title: "Provide a Meal",
-        href: "/get-involved/provide-meal",
+        href: "/get-involved#provide-meal",
         icon: <Utensils size={16} />,
       },
     ],

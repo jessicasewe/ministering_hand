@@ -144,7 +144,7 @@ export default function Volunteer() {
       </section>
 
       {/* Provide a Meal Section */}
-      <section className="py-20 px-6 lg:px-16 bg-white">
+      <section className="py-20 px-6 lg:px-16 bg-white" id="provide-meal">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
