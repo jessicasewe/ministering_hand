@@ -41,7 +41,7 @@ const navigationItems: NavItem[] = [
     dropdown: [
       {
         title: "Our Mission and Vision",
-        href: "/about",
+        href: "/about#mission-vision",
         icon: <Target size={16} />,
       },
       { title: "Our Board", href: "/about#board", icon: <Users size={16} /> },
