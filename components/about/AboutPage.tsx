@@ -40,11 +40,11 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <section
+        id="about"
         className="relative h-[60vh] flex items-center justify-center bg-cover bg-center text-white"
         style={{
           backgroundImage: "url('/holdinghands.png')",
         }}
-        id="about"
       >
         <div className="absolute inset-0 bg-black/10 z-0"></div>
 
