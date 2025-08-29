@@ -68,7 +68,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="mission-vision" className="py-16 px-6 lg:px-12 bg-white">
+      <section className="py-16 px-6 lg:px-12 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2
