@@ -40,7 +40,6 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <section
-        id="about"
         className="relative h-[60vh] flex items-center justify-center bg-cover bg-center text-white"
         style={{
           backgroundImage: "url('/holdinghands.png')",
@@ -69,7 +68,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="mission-vision" className="py-16 px-6 lg:px-12 bg-white">
+      <section id="about" className="py-16 px-6 lg:px-12 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2
