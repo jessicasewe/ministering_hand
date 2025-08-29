@@ -22,7 +22,7 @@ const corinthia = Corinthia({
 });
 
 export const metadata: Metadata = {
-  title: "Ministerinf Hand Inc",
+  title: "Ministering Hand Inc",
   description: "Sheltering Hope, Nurturing Strength",
 };
 
