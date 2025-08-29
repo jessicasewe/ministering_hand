@@ -48,6 +48,11 @@ export default function GetInvolvedSection() {
               priority
             />
           </div>
+          {/* <div className="bg-[#1e8e9d] p-6 rounded-xl text-center mt-8">
+                <p className="text-white font-bold text-xl italic">
+                  "Her vision is clear: No woman should face cancer alone."
+                </p>
+              </div> */}
 
           {/* Right Action Items Section */}
           <div className="bg-[#1e8e9d] h-[400px] lg:h-[500px] flex flex-col justify-center px-12 lg:px-16">

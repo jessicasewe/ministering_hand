@@ -35,8 +35,7 @@ export default function ImpactSection() {
               style={{ transform: `rotate(${rotation}deg)` }}
             >
               <div className="text-center px-4">
-                <div className="text-4xl font-bold mb-2">+2M</div>
-                <div className="text-xs leading-tight">
+                <div className="text-sm leading-tight">
                   MinisteringHand have
                   <br />
                   provided over 2

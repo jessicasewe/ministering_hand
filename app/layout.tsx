@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Corinthia } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/CustomCursor";
 import Navbar from "@/components/home/Navbar";
+import CurvedFooter from "@/components/home/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +13,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const corinthia = Corinthia({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-corinthia",
 });
 
 export const metadata: Metadata = {
@@ -30,8 +37,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <CustomCursor /> {/* ✅ Render cursor here */}
+        <CustomCursor />
         {children}
+        <CurvedFooter />
       </body>
     </html>
   );

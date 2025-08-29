@@ -25,7 +25,7 @@ export default function ModernFooter() {
           </h2>
           <Link
             href="/donate"
-            className="inline-block bg-[#1e8e9d] hover:bg-[#1e8e9dee] text-white font-semibold px-8 py-3 rounded-full text-lg transition-colors duration-200"
+            className="inline-block bg-[#1e8e9d] text-white font-semibold px-8 py-3 rounded-full text-lg transition-colors duration-200 border border-transparent hover:bg-white hover:text-[#1e8e9d] hover:border-[#1e8e9d]"
           >
             Donate
           </Link>

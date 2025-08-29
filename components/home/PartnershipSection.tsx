@@ -17,7 +17,7 @@ const services: AccordionItem[] = [
   {
     title: "Nutritional Support & Meals",
     content:
-      "Recognizing that proper nutrition is crucial during cancer treatment, we provide simple, nutritious meals to our residents. Our meal program is designed to support healing and maintain strength throughout the treatment process, ensuring that patients don't have to worry about meal planning or preparation during this challenging time.",
+      "At Ministering Hand, we provide light snacks and simple meals to our guests whenever possible. While we don’t offer full, consistent meal service, we warmly welcome community support through cookouts and food donations to help nourish those we serve. Our focus is on creating a caring environment where every small comfort counts.",
   },
   {
     title: "Comprehensive Support Services",
