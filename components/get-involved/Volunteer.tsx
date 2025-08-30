@@ -408,12 +408,20 @@ export default function Volunteer() {
             {/* Right Content - Image placeholder */}
             <div className="flex justify-center lg:justify-end">
               <div className="w-full max-w-md">
-                <div className="bg-gray-200 rounded-lg h-80 flex items-center justify-center">
-                  <p className="text-gray-500 text-center">
+                <div className="bg-gray-200 rounded-lg h-80 flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/food.jpg"
+                    alt="Meal Service"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = "none";
+                    }}
+                  />
+                  {/* <p className="text-gray-500 text-center absolute">
                     Meal Service
                     <br />
                     Image Placeholder
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
