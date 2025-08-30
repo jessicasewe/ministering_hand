@@ -108,7 +108,7 @@ export default function AboutPage() {
               <p className="text-lg lg:text-xl text-[#5da4ae] max-w-4xl text-center leading-relaxed">
                 Ministering Hand Incorporated is a nonprofit organization
                 dedicated to supporting women undergoing cancer treatment within
-                the UNC Healthcare system by providing safe housing and
+                the Duke and UNC Healthcare system by providing safe housing and
                 transportation assistance throughout the course of treatment.
                 Our services include safe, temporary housing tailored to each
                 patient's treatment duration and the provision of simple,

@@ -11,11 +11,11 @@ const actionItems = [
   },
   {
     title: "Contribute",
-    href: "/contribute",
+    href: "/partnership",
   },
   {
     title: "Volunteer",
-    href: "/volunteer",
+    href: "/get-involved#volunteer",
   },
 ];
 

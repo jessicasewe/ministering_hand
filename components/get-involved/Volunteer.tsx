@@ -343,10 +343,11 @@ export default function Volunteer() {
                     Drop Off Weekend Lunches
                   </h2>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    Weekends can be especially challenging for families as
-                    hospital services are limited and dining options may be
-                    reduced. Your weekend lunch donations provide comfort and
-                    convenience when families need it most.
+                    Our guests often value meals more over the weekend, when
+                    they may be spending extra time together or with their
+                    families and have fewer dining options nearby. Your weekend
+                    lunch donations provide comfort and convenience when
+                    families need it most.
                   </p>
 
                   <h3 className="text-2xl font-bold text-gray-900 mb-6">
@@ -358,7 +359,7 @@ export default function Volunteer() {
                       <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
                       <p className="text-gray-700">
                         <strong>Drop off times:</strong> Saturdays and Sundays
-                        between 11:00 AM - 1:00 PM.
+                        between 9:00 AM - 3:00 PM.
                       </p>
                     </div>
                     <div className="flex items-start gap-3">

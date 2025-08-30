@@ -17,7 +17,7 @@ export default function WhatWeDoPage() {
               Safe Housing
             </h1>
             <p className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
-              Welcome to Safe
+              Welcome to Our Home
             </p>
 
             <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
@@ -29,10 +29,10 @@ export default function WhatWeDoPage() {
                 distance and instability, so women can focus fully on healing.
               </p>
               <p>
-                We lease a comfortable, home-like residence where each guest is
-                welcomed into a supportive, compassionate environment. Women may
-                stay for the duration of their treatment, with lengths of stay
-                tailored to their individual needs and treatment plans.
+                We provide a comfortable, home-like residence where each guest
+                is welcomed into a supportive, compassionate environment. Women
+                may stay for the duration of their treatment, with lengths of
+                stay tailored to their individual needs and treatment plans.
               </p>
             </div>
           </div>

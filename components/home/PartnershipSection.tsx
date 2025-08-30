@@ -12,7 +12,7 @@ const services: AccordionItem[] = [
   {
     title: "Safe Housing & Transportation",
     content:
-      "We provide safe, temporary housing tailored to each patient's treatment duration within the UNC Healthcare system. Our housing services are complemented by reliable transportation assistance to ensure patients can attend all their appointments without the stress of logistics. We understand that distance from care can be a significant barrier, so we work to eliminate this obstacle for women facing cancer treatment.",
+      "We provide safe, temporary housing tailored to each patient's treatment duration within the Duke and UNC Healthcare system. Our housing services are complemented by reliable transportation assistance to ensure patients can attend all their appointments without the stress of logistics. We understand that distance from care can be a significant barrier, so we work to eliminate this obstacle for women facing cancer treatment.",
   },
   {
     title: "Nutritional Support & Meals",

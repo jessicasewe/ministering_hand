@@ -6,7 +6,7 @@ export default function HomeOffers() {
       icon: Home,
       title: "Private & Shared Rooms",
       description:
-        "Comfortable accommodations in a quiet, healing environment designed for rest and recovery.",
+        "Comfortable accommodation in a quiet, healing environment designed for rest and recovery.",
     },
     {
       icon: Shield,
