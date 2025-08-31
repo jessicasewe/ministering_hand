@@ -40,10 +40,10 @@ export default function Volunteer() {
 
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!, // Your Service ID
-        process.env.NEXT_PUBLIC_EMAILJS_VOLUNTEER_TEMPLATE_ID!, // Volunteer-specific template
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_VOLUNTEER_TEMPLATE_ID!,
         templateParams,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! // Public key
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
       .then(
         (response) => {
