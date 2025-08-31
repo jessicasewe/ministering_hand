@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 export default function Volunteer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,23 +24,48 @@ export default function Volunteer() {
     }));
   };
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Volunteer application submitted:", formData);
-    setIsModalOpen(false);
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      volunteerType: "",
-      experience: "",
-      availability: "",
-      message: "",
-    });
-    alert(
-      "Thank you for your interest in volunteering! We will contact you soon."
-    );
+
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phone: formData.phone,
+      volunteerType: formData.volunteerType,
+      experience: formData.experience,
+      availability: formData.availability,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!, // Your Service ID
+        process.env.NEXT_PUBLIC_EMAILJS_VOLUNTEER_TEMPLATE_ID!, // Volunteer-specific template
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! // Public key
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setIsModalOpen(false);
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            volunteerType: "",
+            experience: "",
+            availability: "",
+            message: "",
+          });
+          alert("✅ Thank you for volunteering! We’ll be in touch soon.");
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          alert("❌ Something went wrong. Please try again later.");
+        }
+      );
   };
 
   const [activeMealTab, setActiveMealTab] = useState<

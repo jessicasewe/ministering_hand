@@ -1,21 +1,19 @@
 export default function DonatePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      {/* Hero Section */}
       <section
         className="relative h-[60vh] flex items-center justify-center bg-cover bg-center text-white"
         style={{
           backgroundImage: "url('/jar.jpg')",
         }}
       >
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/10 z-0"></div>
 
-        {/* Content */}
         <div className="relative z-10 text-center px-6">
           <h1 className="text-6xl lg:text-7xl font-bold mb-6">DONATE</h1>
         </div>
 
-        {/* Inward Curve */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-10">
           <svg
             className="relative block w-full h-[100px]"
@@ -29,6 +27,23 @@ export default function DonatePage() {
             />
           </svg>
         </div>
+      </section>
+
+      {/* Donorbox Embed */}
+      <section className="flex justify-center py-12 px-4">
+        <iframe
+          src="https://donorbox.org/embed/donate-to-ministering-hands-inc?"
+          name="donorbox"
+          frameBorder="0"
+          scrolling="no"
+          height="900px"
+          width="100%"
+          style={{
+            maxWidth: "500px",
+            minWidth: "250px",
+            maxHeight: "none",
+          }}
+        />
       </section>
     </div>
   );

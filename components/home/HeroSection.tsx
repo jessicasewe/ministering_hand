@@ -18,10 +18,12 @@ export default function HeroSection() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
                 <span className="block">Sheltering</span>
                 <span className="block">hope,</span>
-                <span className="block relative">
+
+                {/* nurturing with animated underline */}
+                <span className="relative inline-block">
                   nurturing
                   <svg
-                    className="absolute bottom-0 left-0 w-80 h-10 animate-pulse-line"
+                    className="absolute top-full left-0 w-40 md:w-80 h-6 animate-pulse-line"
                     viewBox="0 0 200 12"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -34,12 +36,14 @@ export default function HeroSection() {
                     />
                   </svg>
                 </span>
+
                 <span className="block relative">
                   strength
-                  <span className="absolute bottom-1 left-0 w-full h-7 bg-#1e8e9d -z-10"></span>
+                  <span className="absolute bottom-1 left-0 w-full h-7 bg-[#1e8e9d] -z-10"></span>
                 </span>
               </h1>
             </div>
+
             <div className="pt-4">
               <Button
                 variant="link"

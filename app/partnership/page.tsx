@@ -1,7 +1,7 @@
 "use client";
 
 import PartnershipSignupSheet from "@/components/partnership/PartnershipSignupDialog";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   DollarSign,
   Moon,
@@ -24,6 +24,7 @@ import {
   MessageSquare,
   ArrowRight,
 } from "lucide-react";
+import emailjs from "emailjs-com";
 
 export default function PartnershipPage() {
   type FormData = {
@@ -51,6 +52,28 @@ export default function PartnershipPage() {
   const [showForm, setShowForm] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  // Show thank you for 10 seconds, then reset form and show form again
+  useEffect(() => {
+    if (submitted) {
+      const timer = setTimeout(() => {
+        setSubmitted(false);
+        setShowForm(true);
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          contactMethod: "Email",
+          roles: [],
+          timeCommitment: "",
+          skills: "",
+          joinEmailGroup: "Yes",
+        });
+      }, 10000); // 10 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [submitted]);
+
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -73,10 +96,38 @@ export default function PartnershipPage() {
     }
   };
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setShowForm(false);
+
+    const templateParams = {
+      fullName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      contactMethod: formData.contactMethod,
+      roles: formData.roles.join(", "),
+      timeCommitment: formData.timeCommitment,
+      skills: formData.skills,
+      joinEmailGroup: formData.joinEmailGroup,
+    };
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setSubmitted(true);
+          setShowForm(false);
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          alert("Something went wrong. Please try again later.");
+        }
+      );
   };
 
   const eventRoles = [
@@ -254,7 +305,7 @@ export default function PartnershipPage() {
               <div className="flex items-center mb-4">
                 <Moon className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  Adopt a Night Program
+                  Adopt a Night Program - January
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -269,7 +320,7 @@ export default function PartnershipPage() {
               <div className="flex items-center mb-4">
                 <Heart className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  Hope Sustainers Club
+                  Hope Sustainers Club - February
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -284,7 +335,7 @@ export default function PartnershipPage() {
               <div className="flex items-center mb-4">
                 <Award className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  Heart of Healing – In Honor/In Memory Giving
+                  Heart of Healing – In Honor/In Memory Giving - March
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -295,11 +346,11 @@ export default function PartnershipPage() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            {/* <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
               <div className="flex items-center mb-4">
                 <Utensils className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  Miles for Meals
+                  Miles for Meals - April
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -308,13 +359,13 @@ export default function PartnershipPage() {
                 step you take puts food on the table for women in treatment.
                 We'll announce the dates at the beginning of every year.
               </p>
-            </div>
+            </div> */}
 
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
               <div className="flex items-center mb-4">
                 <Users className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  Partner in Care – Community Sponsorships
+                  Partner in Care – Community Sponsorships - May
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -329,7 +380,7 @@ export default function PartnershipPage() {
               <div className="flex items-center mb-4">
                 <ShoppingCart className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  Fill the Pantry Drive
+                  Fill the Pantry Drive - June
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -344,7 +395,7 @@ export default function PartnershipPage() {
               <div className="flex items-center mb-4">
                 <Gift className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  Yuletide in July – Welcome Kits Fund
+                  Yuletide in July – Welcome Kits Fund - July
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -358,7 +409,7 @@ export default function PartnershipPage() {
               <div className="flex items-center mb-4">
                 <Car className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  Back to Care – Transportation Fund
+                  Back to Care – Transportation Fund - August
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -372,7 +423,7 @@ export default function PartnershipPage() {
               <div className="flex items-center mb-4">
                 <Target className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  Circle of Support
+                  Circle of Support - September
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -387,7 +438,7 @@ export default function PartnershipPage() {
               <div className="flex items-center mb-4">
                 <Calendar className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  Awareness & Action Month
+                  Awareness & Action Month - October
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -398,11 +449,11 @@ export default function PartnershipPage() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            {/* <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
               <div className="flex items-center mb-4">
                 <Clock className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  24 Hours of Hope – Giving Day
+                  24 Hours of Hope – Giving Day - November
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -410,13 +461,13 @@ export default function PartnershipPage() {
                 every hour is packed with livestreams, patient stories, and
                 matching challenges to keep the momentum going.
               </p>
-            </div>
+            </div> */}
 
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
               <div className="flex items-center mb-4">
                 <Home className="text-[#1e8e9d] mr-3" size={24} />
                 <h3 className="text-xl font-bold text-gray-900">
-                  Season of Shelter – Year-End Appeal
+                  Season of Shelter – Year-End Appeal - December
                 </h3>
               </div>
               <p className="text-gray-700 leading-relaxed">

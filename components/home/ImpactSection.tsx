@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import CancerSupportImg from "@/public/together.png";
 
@@ -30,7 +31,7 @@ export default function ImpactSection() {
                 priority
               />
             </div>
-            <div
+            {/* <div
               className="absolute -bottom-12 -right-12 w-48 h-48 bg-[#044b67] rounded-full flex items-center justify-center text-white transition-transform duration-100 ease-out z-20 shadow-2xl"
               style={{ transform: `rotate(${rotation}deg)` }}
             >
@@ -47,7 +48,7 @@ export default function ImpactSection() {
                   women in need
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Text Content */}
@@ -78,9 +79,11 @@ export default function ImpactSection() {
 
             {/* CTA Button */}
             <div className="pt-6">
-              <Button className="bg-[#1e8e9d] hover:bg-[#1e8e9dee] text-white font-light px-8 py-3 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-200">
-                Donate
-              </Button>
+              <Link href="/donate">
+                <Button className="bg-[#1e8e9d] hover:bg-[#1e8e9dee] text-white font-light px-8 py-3 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-200">
+                  Donate
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

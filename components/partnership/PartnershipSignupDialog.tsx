@@ -1,5 +1,6 @@
 "use client";
 
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import {
   Handshake,
@@ -142,26 +143,51 @@ export default function PartnershipSignupSheet() {
 
   const handleSubmit = () => {
     if (validateStep(currentStep)) {
-      console.log("Partnership form submitted:", formData);
-      setIsSubmitted(true);
+      emailjs
+        .send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_EMAILJS_PARTNER_TEMPLATE_ID!,
+          {
+            fullName: formData.fullName,
+            organizationName: formData.organizationName,
+            email: formData.email,
+            phone: formData.phone,
+            websiteLinks: formData.websiteLinks,
+            partnershipTypes: formData.partnershipTypes.join(", "),
+            goals: formData.goals,
+            mutualSupport: formData.mutualSupport,
+            comments: formData.comments,
+          },
+          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        )
+        .then(
+          () => {
+            console.log("Email sent successfully!");
+            setIsSubmitted(true);
 
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setIsOpen(false);
-        setCurrentStep(1);
-        setFormData({
-          fullName: "",
-          organizationName: "",
-          email: "",
-          phone: "",
-          websiteLinks: "",
-          partnershipTypes: [],
-          goals: "",
-          mutualSupport: "",
-          comments: "",
-        });
-        setErrors({});
-      }, 3000);
+            setTimeout(() => {
+              setIsSubmitted(false);
+              setIsOpen(false);
+              setCurrentStep(1);
+              setFormData({
+                fullName: "",
+                organizationName: "",
+                email: "",
+                phone: "",
+                websiteLinks: "",
+                partnershipTypes: [],
+                goals: "",
+                mutualSupport: "",
+                comments: "",
+              });
+              setErrors({});
+            }, 3000);
+          },
+          (error) => {
+            console.error("EmailJS error:", error);
+            alert("Something went wrong. Please try again later.");
+          }
+        );
     }
   };
 
