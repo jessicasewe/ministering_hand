@@ -10,17 +10,17 @@ interface AccordionItem {
 
 const services: AccordionItem[] = [
   {
-    title: "Safe Housing & Transportation",
+    title: "Safe Housing",
     content:
       "We provide safe, temporary housing tailored to each patient's treatment duration within the Duke and UNC Healthcare system. Our housing services are complemented by reliable transportation assistance to ensure patients can attend all their appointments without the stress of logistics. We understand that distance from care can be a significant barrier, so we work to eliminate this obstacle for women facing cancer treatment.",
   },
   {
-    title: "Nutritional Support & Meals",
+    title: "Transportation",
     content:
-      "At Ministering Hand, we provide light snacks and simple meals to our guests whenever possible. While we don’t offer full, consistent meal service, we warmly welcome community support through cookouts and food donations to help nourish those we serve. Our focus is on creating a caring environment where every small comfort counts.",
+      "Currently, we provide transportation for emergencies and for critical medical needs. Healing is our priority, and we look forward to expanding this service as we grow.",
   },
   {
-    title: "Comprehensive Support Services",
+    title: "Referral Services",
     content:
       "Built on a strong foundation of experience within the North Carolina cancer care community, we provide referral services and resources to address patients' emotional, financial, counseling, and social support needs. We focus on women facing financial hardship, distance from care, and lack of support, striving to offer a nurturing environment that eases the non-medical burdens of cancer so patients can focus fully on healing.",
   },
@@ -67,7 +67,7 @@ export default function HowWeHelpSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-gray-600 tracking-wider uppercase mb-4">
-            WHAT WE DO
+            Our Services
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             <span className="relative">

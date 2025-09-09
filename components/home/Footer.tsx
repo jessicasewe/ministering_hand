@@ -40,13 +40,13 @@ export default function ModernFooter() {
             href="/what-we-do"
             className="text-gray-700 hover:text-[#1e8e9dee] font-medium transition-colors duration-200"
           >
-            What We Do
+            Our Services
           </Link>
           <Link
             href="/about"
             className="text-gray-700 hover:text-[#1e8e9dee] font-medium transition-colors duration-200"
           >
-            About Us
+            Our Story
           </Link>
           <Link
             href="/get-involved"

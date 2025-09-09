@@ -37,11 +37,16 @@ interface NavItem {
 const navigationItems: NavItem[] = [
   { title: "Home", href: "/" },
   {
-    title: "About Us",
+    title: "Our Story",
     dropdown: [
       {
+        title: "About Us",
+        href: "/about#about-us",
+        icon: <Users size={16} />,
+      },
+      {
         title: "Our Mission and Vision",
-        href: "/about",
+        href: "/about#vision",
         icon: <Target size={16} />,
       },
       { title: "Our Board", href: "/about#board", icon: <Users size={16} /> },
@@ -68,7 +73,7 @@ const navigationItems: NavItem[] = [
     ],
   },
   {
-    title: "What We Do",
+    title: "Our Services",
     dropdown: [
       {
         title: "Housing",

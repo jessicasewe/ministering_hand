@@ -29,21 +29,43 @@ export default function DonatePage() {
         </div>
       </section>
 
+      {/* Donation Description Section (moved below header, above form) */}
+      <section className="py-10 px-4 lg:px-0 bg-white">
+        <div className="max-w-2xl mx-auto text-center mb-10">
+          <div className="flex justify-center mb-6">
+            <div className="w-16 h-1 bg-[#5da4ae] rounded-full"></div>
+          </div>
+          <h2
+            className="text-8xl lg:text-8xl font-medium text-gray-900 mb-4"
+            style={{ fontFamily: "Corinthia, cursive" }}
+          >
+            Your Gift Makes Healing Possible
+          </h2>
+          <p className="text-lg lg:text-xl text-[#1e8e9d] max-w-xl mx-auto leading-relaxed">
+            Ministering Hand Incorporated is a registered 501(c)(3) nonprofit
+            organization (EIN: 99-3614985). Your tax-deductible gift helps us
+            break down non-medical barriers to cancer treatment by providing
+            cancer patients with a conducive healing environment.
+          </p>
+        </div>
+      </section>
       {/* Donorbox Embed */}
       <section className="flex justify-center py-12 px-4">
-        <iframe
-          src="https://donorbox.org/embed/donate-to-ministering-hands-inc?"
-          name="donorbox"
-          frameBorder="0"
-          scrolling="no"
-          height="900px"
-          width="100%"
-          style={{
-            maxWidth: "500px",
-            minWidth: "250px",
-            maxHeight: "none",
-          }}
-        />
+        <div className="w-full flex justify-center">
+          <div
+            className="w-full"
+            style={{ maxWidth: "500px", minWidth: "250px" }}
+          >
+            <iframe
+              src="https://donorbox.org/embed/donate-to-ministering-hands-inc?"
+              name="donorbox"
+              frameBorder="0"
+              scrolling="auto"
+              className="w-full min-h-[600px] max-h-[90vh] rounded-xl shadow-lg overflow-auto"
+              style={{ maxHeight: "90vh", minHeight: "600px" }}
+            />
+          </div>
+        </div>
       </section>
     </div>
   );
