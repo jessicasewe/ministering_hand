@@ -120,10 +120,10 @@ export default function ModernFooter() {
         <div className="text-center mt-8 pt-6 border-t border-[#1e8e9dee]">
           <p className="text-gray-600 text-sm italic">
             <span className="text-[#1e8e9d] font-semibold">
-              "Sheltering Hope, Nurturing Strength"
+              Sheltering Hope, Nurturing Strength
             </span>
-            <br />A 501(c)3 nonprofit organization serving women through cancer
-            treatment
+            <br />A 501(c)3 nonprofit organization serving women undergoing
+            cancer treatment.
           </p>
         </div>
       </div>

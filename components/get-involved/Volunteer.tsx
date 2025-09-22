@@ -228,10 +228,10 @@ export default function Volunteer() {
                     Bring Dinner for the Whole House
                   </h2>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    Meals offer much-needed hospitality at the end of a long day
-                    at the hospital and ensure that the Family House is "more
-                    than just a place to stay." Let's show some love from our
-                    community!
+                    Providing meals brings comfort to our guests, especially
+                    after a long day at the hospital. Join us in spreading
+                    kindness and support to our guests, and transform our home
+                    into a haven where guests feel truly cared for.
                   </p>
 
                   <h3 className="text-2xl font-bold text-gray-900 mb-6">
@@ -273,17 +273,17 @@ export default function Volunteer() {
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
-                      <p className="text-gray-700">
+                      {/* <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div> */}
+                      {/* <p className="text-gray-700">
                         <strong>Send 3-8 volunteers</strong> to serve the meal
                         at 5:30 in the Family House kitchen.
-                      </p>
+                      </p> */}
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
                       <p className="text-gray-700">
                         <strong>
-                          Provide dinner and drinks for 45-50 people.
+                          Provide dinner and drinks for a maximum of 10 people.
                         </strong>
                       </p>
                     </div>
@@ -294,11 +294,11 @@ export default function Volunteer() {
                   </h3>
                   <div className="space-y-2">
                     <p className="text-[#5da4ae] underline cursor-pointer">
-                      Family House Dinner Instructions - Recipe for Success
+                      Dinner Directions for Our Home - Making Every Memorable
                     </p>
-                    <p className="text-gray-700">
+                    {/* <p className="text-gray-700">
                       Groups need to send 3-8 volunteers to serve the meal.
-                    </p>
+                    </p> */}
                   </div>
                 </>
               )}

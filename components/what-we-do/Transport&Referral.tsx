@@ -17,10 +17,9 @@ export default function HeroWithReferral() {
                 Transportation
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed">
-                At Ministering Hand, we are committed to providing safe,
-                accessible and reliable transportation to and from medical
-                appointments, ensuring that patients can focus on healing, not
-                logistics.
+                Currently, we provide transportation for emergencies and for
+                critical medical needs. Healing is our priority, and we look
+                forward to expanding this service as we grow.
               </p>
             </div>
 

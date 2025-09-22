@@ -102,7 +102,7 @@ const navigationItems: NavItem[] = [
         icon: <Heart size={16} />,
       },
       {
-        title: "Provide a Meal",
+        title: "Donate a Meal",
         href: "/get-involved#provide-meal",
         icon: <Utensils size={16} />,
       },

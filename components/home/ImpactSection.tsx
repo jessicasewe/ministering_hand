@@ -71,10 +71,10 @@ export default function ImpactSection() {
 
             {/* Description */}
             <p className="text-gray-700 text-lg leading-relaxed max-w-lg">
-              Focused on women facing financial hardship, distance from care,
-              and lack of support, we strive to offer a nurturing environment to
-              ease the non-medical burdens of cancer so patients can focus fully
-              on healing.
+              Focused on women undergoing cancer treatment who face financial
+              hardship, distance from care, and lack of support, we strive to
+              offer a nurturing environment to ease the non-medical burdens of
+              cancer so they can focus fully on healing.
             </p>
 
             {/* CTA Button */}
