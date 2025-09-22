@@ -183,6 +183,16 @@ export default function Volunteer() {
           {/* Three Options - Now Clickable Tabs */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <button
+              onClick={() => setActiveMealTab("merry")}
+              className={`text-center p-4 rounded-lg transition-all ${
+                activeMealTab === "merry"
+                  ? "bg-[#5da4ae] text-white shadow-lg"
+                  : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+              }`}
+            >
+              <h3 className="text-xl font-semibold mb-2">Plates of Care</h3>
+            </button>
+            <button
               onClick={() => setActiveMealTab("dinner")}
               className={`text-center p-4 rounded-lg transition-all ${
                 activeMealTab === "dinner"
@@ -193,18 +203,6 @@ export default function Volunteer() {
               <h3 className="text-xl font-semibold mb-2">Provide a Dinner</h3>
             </button>
             <button
-              onClick={() => setActiveMealTab("merry")}
-              className={`text-center p-4 rounded-lg transition-all ${
-                activeMealTab === "merry"
-                  ? "bg-[#5da4ae] text-white shadow-lg"
-                  : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
-              }`}
-            >
-              <h3 className="text-xl font-semibold mb-2">
-                Contribute to Merry Meals
-              </h3>
-            </button>
-            <button
               onClick={() => setActiveMealTab("weekend")}
               className={`text-center p-4 rounded-lg transition-all ${
                 activeMealTab === "weekend"
@@ -213,7 +211,7 @@ export default function Volunteer() {
               }`}
             >
               <h3 className="text-xl font-semibold mb-2">
-                Drop Off Weekend Lunches
+                Weekend Meal Drop-Off
               </h3>
             </button>
           </div>
@@ -306,125 +304,98 @@ export default function Volunteer() {
               {activeMealTab === "merry" && (
                 <>
                   <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                    Contribute to Merry Meals
+                    Be Part of Plates of Care
                   </h2>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    Join our Merry Meals program and help bring joy and
-                    nourishment to families during their stay. Your contribution
-                    helps create special moments and memorable experiences for
-                    our guests.
+                    <span className="text-2xl font-bold text-[#5da4ae]">
+                      🍽️ Serving Meals, Sharing Hope, And Spreading Love and
+                      Kindness.
+                    </span>
+                    <br />
+                    Be a part of our Plates of Care program and help bring
+                    warmth, comfort, and nourishment to our guests during their
+                    stay. Your support helps create joyful experiences and
+                    lasting memories for our guests.
                   </p>
-
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                    How Merry Meals works:
-                  </h3>
-
-                  <div className="space-y-4 mb-8">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
-                      <p className="text-gray-700">
-                        Support special holiday and celebration meals throughout
-                        the year.
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
-                      <p className="text-gray-700">
-                        Contribute financially or donate specific items for
-                        themed meals.
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
-                      <p className="text-gray-700">
-                        Help create festive atmospheres during difficult times
-                        for families.
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
-                      <p className="text-gray-700">
-                        Participate in organizing special events and
-                        celebrations.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="bg-[#5da4ae]/10 p-6 rounded-lg">
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                      Get Involved
-                    </h4>
-                    <p className="text-gray-700">
-                      Contact us to learn about upcoming Merry Meals
-                      opportunities and how you can make a difference in
-                      creating joyful moments for our families.
-                    </p>
-                  </div>
+                  <h4 className="text-xl font-bold text-gray-900 mb-4">
+                    How Plate of Care Makes an Impact:
+                  </h4>
+                  <ul className="list-disc ml-6 text-gray-700 space-y-2 text-lg">
+                    <li>Support with a meal any day of the week.</li>
+                    <li>
+                      Provide special holiday and celebration meals throughout
+                      the year.
+                    </li>
+                    <li>
+                      Offer financial contributions or donate items for themed
+                      meals.
+                    </li>
+                    <li>
+                      Help set a festive and uplifting atmosphere for families
+                      during challenging times.
+                    </li>
+                    <li>
+                      Take part in planning and organizing special events and
+                      celebrations.
+                    </li>
+                  </ul>
                 </>
               )}
 
               {activeMealTab === "weekend" && (
                 <>
                   <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                    Drop Off Weekend Lunches
+                    Weekend Meal Drop-Off
                   </h2>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    Our guests often value meals more over the weekend, when
-                    they may be spending extra time together or with their
-                    families and have fewer dining options nearby. Your weekend
-                    lunch donations provide comfort and convenience when
-                    families need it most.
+                    Weekends can be a special time for our guests and their
+                    families, but they may come with limited dining options.
+                    Your donation of weekend meals brings both comfort and
+                    convenience to those who need it most, helping our guests
+                    and their families enjoy a nourishing meal together.
                   </p>
-
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                    Weekend lunch guidelines:
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Donation Guide:
                   </h3>
-
-                  <div className="space-y-4 mb-8">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
-                      <p className="text-gray-700">
-                        <strong>Drop off times:</strong> Saturdays and Sundays
-                        between 9:00 AM - 3:00 PM.
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
-                      <p className="text-gray-700">
-                        Provide lunch for approximately 30-40 people.
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
-                      <p className="text-gray-700">
-                        No volunteers needed to serve - simply drop off
-                        ready-to-eat meals.
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
-                      <p className="text-gray-700">
-                        Coordinate with staff for delivery timing and any
-                        special requirements.
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
-                      <p className="text-gray-700">
-                        Consider easy-to-serve options like sandwiches, salads,
-                        or individually packaged meals.
-                      </p>
-                    </div>
+                  <div className="mb-8 space-y-2 text-lg text-gray-700">
+                    <p>
+                      <strong>Drop-Off Times:</strong> Saturdays and Sundays,
+                      9:00 a.m. – 3:00 p.m.
+                    </p>
+                    <p>
+                      <strong>Portion Size:</strong> Meals for approximately 10
+                      people
+                    </p>
+                    <p>
+                      <strong>Serving:</strong> No volunteers needed, just drop
+                      off ready-to-eat meals
+                    </p>
+                    <p>
+                      <strong>Coordination:</strong> Work with us to schedule
+                      your delivery and discuss any special instructions
+                    </p>
+                    <p>
+                      <strong>Meal Ideas:</strong> Easy-to-serve options like
+                      sandwiches, salads, or individually packaged meals, or any
+                      meal you’re able to provide. Every contribution is
+                      appreciated.
+                    </p>
                   </div>
-
+                  <h3 className="text-2xl font-bold text-[#1e8e9d] mb-2">
+                    Make an Impact This Weekend
+                  </h3>
                   <div className="bg-[#5da4ae]/10 p-6 rounded-lg">
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                      Contact Us
-                    </h4>
                     <p className="text-gray-700">
-                      Please reach out to coordinate your weekend lunch donation
-                      and ensure we can properly receive and serve your generous
-                      contribution.
+                      To arrange your weekend meal donation and ensure a smooth
+                      delivery, please contact us at{" "}
+                      <a
+                        href="mailto:ministeringhand25@gmail.com"
+                        className="underline text-[#1e8e9d]"
+                      >
+                        ministeringhand25@gmail.com
+                      </a>
+                      . Your generosity makes a real difference for families in
+                      need. Every meal counts.
                     </p>
                   </div>
                 </>
