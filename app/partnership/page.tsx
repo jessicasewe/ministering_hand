@@ -532,12 +532,14 @@ export default function PartnershipPage() {
                   className="w-16 h-16 rounded-full object-cover"
                 />
                 <div>
-                  <p className="text-lg font-bold text-gray-900">Name Here</p>
+                  <p className="text-lg font-bold text-gray-900">
+                    Pearl Langhorne
+                  </p>
                   <p className="text-gray-600">
                     Director of Volunteer Services
                   </p>
                   <p className="text-[#1e8e9d] font-medium">
-                    email@example.org
+                    ministeringhand25@gmail.com
                   </p>
                 </div>
               </div>
