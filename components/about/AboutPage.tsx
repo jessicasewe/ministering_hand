@@ -81,21 +81,21 @@ export default function AboutPage() {
             <div className="w-16 h-1 bg-[#5da4ae] rounded-full"></div>
           </div>
           <p className="text-lg lg:text-xl text-[#5da4ae] max-w-3xl mx-auto text-center leading-relaxed">
-            Ministering Hand Incorporated is a nonprofit, 501(c)3 organization,
-            dedicated to supporting women undergoing cancer treatment within the
-            Duke and UNC Healthcare systems. Our services include safe,
-            temporary housing tailored to each patient's treatment duration.
-            Built on a strong foundation of experience and connection within the
-            North Carolina cancer care community, Ministering Hand Incorporated
-            is committed to providing referral services and resources to
-            alleviate patients’ emotional, financial, counseling and social
-            support needs. Focused on women facing financial hardship, distance
-            from care, and lack of support, we strive to offer a nurturing
-            environment to ease the non-medical burdens of cancer so patients
-            can focus fully on healing. In time, we plan to expand our services
-            to include male patients and broader healthcare networks. By
-            addressing barriers to healthcare, we strive to ensure that no woman
-            fights cancer alone.
+            Ministering Hand Incorporated is a nonprofit, 501(c)(3)
+            organization, dedicated to supporting women undergoing cancer
+            treatment within the Duke and UNC Healthcare systems. Our services
+            include safe, temporary housing tailored to each patient's treatment
+            duration. Built on a strong foundation of experience and connection
+            within the North Carolina cancer care community, Ministering Hand
+            Incorporated is committed to providing referral services and
+            resources to alleviate patients’ emotional, financial, counseling
+            and social support needs. Focused on women facing financial
+            hardship, distance from care, and lack of support, we strive to
+            offer a nurturing environment to ease the non-medical burdens of
+            cancer so patients can focus fully on healing. In time, we plan to
+            expand our services to include male patients and broader healthcare
+            networks. By addressing barriers to healthcare, we strive to ensure
+            that no woman fights cancer alone.
           </p>
         </div>
       </section>

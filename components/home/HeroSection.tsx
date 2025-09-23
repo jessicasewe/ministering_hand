@@ -11,7 +11,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
           <div className="space-y-6 lg:ml-8 xl:ml-40">
             <p className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
-              OUR MISSION IS SIMPLE
+              OUR PURPOSE IS SIMPLE
             </p>
 
             <div className="space-y-1">

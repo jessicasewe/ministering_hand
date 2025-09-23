@@ -93,9 +93,9 @@ export default function HeroWithReferral() {
                     patient’s life; emotional, financial, spiritual, and
                     communal. Through our thoughtful referral services, we
                     connect our guests with trusted resources that extend care
-                    beyond the clinic: counseling, financial assistance,
-                    wellness programs, and more. At Ministering Hand, we care
-                    about the whole person.
+                    beyond the medical facility: counseling, financial
+                    assistance, wellness programs, and more. At Ministering
+                    Hand, we care about the whole person.
                   </p>
                 </div>
               </div>

@@ -122,7 +122,7 @@ export default function ModernFooter() {
             <span className="text-[#1e8e9d] font-semibold">
               Sheltering Hope, Nurturing Strength
             </span>
-            <br />A 501(c)3 nonprofit organization serving women undergoing
+            <br />A 501(c)(3) nonprofit organization serving women undergoing
             cancer treatment.
           </p>
         </div>

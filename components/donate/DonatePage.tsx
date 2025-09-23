@@ -44,7 +44,7 @@ export default function DonatePage() {
           <p className="text-lg lg:text-xl text-[#1e8e9d] max-w-xl mx-auto leading-relaxed">
             Ministering Hand Incorporated is a registered 501(c)(3) nonprofit
             organization (EIN: 99-3614985). Your tax-deductible gift helps us
-            break down non-medical barriers to cancer treatment by providing
+            mitigate non-medical barriers to cancer treatment by providing
             cancer patients with a conducive healing environment.
           </p>
         </div>

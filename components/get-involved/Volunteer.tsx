@@ -175,7 +175,7 @@ export default function Volunteer() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-gray-800 mb-4">
-              Sharing Food, Sharing Moments
+              Sharing Meals & Moments
             </h2>
             <div className="w-24 h-1 bg-[#5da4ae] mx-auto"></div>
           </div>
