@@ -40,35 +40,20 @@ const navigationItems: NavItem[] = [
     title: "Our Story",
     dropdown: [
       {
-        title: "About Us",
-        href: "/about#about-us",
-        icon: <Users size={16} />,
-      },
-      {
         title: "Our Mission and Vision",
         href: "/about#vision",
         icon: <Target size={16} />,
+      },
+      {
+        title: "About Us",
+        href: "/about#about-us",
+        icon: <Users size={16} />,
       },
       { title: "Our Board", href: "/about#board", icon: <Users size={16} /> },
       {
         title: "Meet the Founder",
         href: "/about#founder",
         icon: <User size={16} />,
-      },
-      {
-        title: "Partnerships",
-        href: "/partnership",
-        icon: <Handshake size={16} />,
-      },
-      {
-        title: "Fundraising",
-        href: "/partnership#fundraising",
-        icon: <DollarSign size={16} />,
-      },
-      {
-        title: "Event Planning",
-        href: "/partnership#event-planning",
-        icon: <Calendar size={16} />,
       },
     ],
   },
@@ -105,6 +90,21 @@ const navigationItems: NavItem[] = [
         title: "Donate a Meal",
         href: "/get-involved#provide-meal",
         icon: <Utensils size={16} />,
+      },
+      {
+        title: "Partnerships",
+        href: "/partnership",
+        icon: <Handshake size={16} />,
+      },
+      {
+        title: "Fundraising",
+        href: "/partnership#fundraising",
+        icon: <DollarSign size={16} />,
+      },
+      {
+        title: "Event Planning",
+        href: "/partnership#event-planning",
+        icon: <Calendar size={16} />,
       },
     ],
   },
@@ -278,8 +278,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden mt-6 pb-6 border-t border-gray-100">
-          <div className="pt-6 space-y-2">
+        <div className="lg:hidden mt-6 pb-6 border-t border-gray-100 bg-white/95 backdrop-blur-md shadow-lg rounded-lg mx-4">
+          <div className="pt-6 space-y-2 px-4">
             {navigationItems.map((item) => {
               const isActive = isItemActive(item);
 

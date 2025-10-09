@@ -68,38 +68,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* About Us Section */}
-      <section id="about-us" className="py-16 px-6 lg:px-12 bg-white">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2
-            className="text-6xl lg:text-8xl text-black font-normal mb-8"
-            style={{ fontFamily: "Corinthia, cursive" }}
-          >
-            About Us
-          </h2>
-          <div className="flex justify-center mb-8">
-            <div className="w-16 h-1 bg-[#5da4ae] rounded-full"></div>
-          </div>
-          <p className="text-lg lg:text-xl text-[#5da4ae] max-w-3xl mx-auto text-center leading-relaxed">
-            Ministering Hand Incorporated is a nonprofit, 501(c)(3)
-            organization, dedicated to supporting women undergoing cancer
-            treatment within the Duke and UNC Healthcare systems. Our services
-            include safe, temporary housing tailored to each patient's treatment
-            duration. Built on a strong foundation of experience and connection
-            within the North Carolina cancer care community, Ministering Hand
-            Incorporated is committed to providing referral services and
-            resources to alleviate patients’ emotional, financial, counseling
-            and social support needs. Focused on women facing financial
-            hardship, distance from care, and lack of support, we strive to
-            offer a nurturing environment to ease the non-medical burdens of
-            cancer so patients can focus fully on healing. In time, we plan to
-            expand our services to include male patients and broader healthcare
-            networks. By addressing barriers to healthcare, we strive to ensure
-            that no woman fights cancer alone.
-          </p>
-        </div>
-      </section>
-
+      {/* Vision and Mission Section */}
       <section id="vision" className="py-16 px-6 lg:px-12 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -147,6 +116,38 @@ export default function AboutPage() {
               <div className="w-16 h-1 bg-[#5da4ae] rounded-full"></div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section id="about-us" className="py-16 px-6 lg:px-12 bg-white">
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h2
+            className="text-6xl lg:text-8xl text-black font-normal mb-8"
+            style={{ fontFamily: "Corinthia, cursive" }}
+          >
+            About Us
+          </h2>
+          <div className="flex justify-center mb-8">
+            <div className="w-16 h-1 bg-[#5da4ae] rounded-full"></div>
+          </div>
+          <p className="text-lg lg:text-xl text-[#5da4ae] max-w-3xl mx-auto text-center leading-relaxed">
+            Ministering Hand Incorporated is a nonprofit, 501(c)(3)
+            organization, dedicated to supporting women undergoing cancer
+            treatment within the Duke and UNC Healthcare systems. Our services
+            include safe, temporary housing tailored to each patient's treatment
+            duration. Built on a strong foundation of experience and connection
+            within the North Carolina cancer care community, Ministering Hand
+            Incorporated is committed to providing referral services and
+            resources to alleviate patients’ emotional, financial, counseling
+            and social support needs. Focused on women facing financial
+            hardship, distance from care, and lack of support, we strive to
+            offer a nurturing environment to ease the non-medical burdens of
+            cancer so patients can focus fully on healing. In time, we plan to
+            expand our services to include male patients and broader healthcare
+            networks. By addressing barriers to healthcare, we strive to ensure
+            that no woman fights cancer alone.
+          </p>
         </div>
       </section>
 
