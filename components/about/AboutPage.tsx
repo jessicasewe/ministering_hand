@@ -68,34 +68,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Vision and Mission Section */}
-      <section id="vision" className="py-16 px-6 lg:px-12 bg-white">
+      {/* Mission Section */}
+      <section id="mission" className="py-16 px-6 lg:px-12 bg-white scroll-mt-24">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2
-              className="text-6xl lg:text-8xl text-black font-normal mb-8"
-              style={{ fontFamily: "Corinthia, cursive" }}
-            >
-              Our Vision
-            </h2>
-            <div className="flex justify-center mb-8">
-              <div className="w-16 h-1 bg-[#5da4ae] rounded-full"></div>
-            </div>
-            <div className="flex justify-center">
-              <p className="text-lg lg:text-xl text-[#5da4ae] max-w-4xl text-center leading-relaxed">
-                We envision a world where no woman faces cancer alone, where
-                every woman has access to safe, supportive, and affordable
-                housing, surrounded by compassion, empowered by resources, and
-                uplifted by a caring community as she walks the path to healing
-                with dignity and strength.
-              </p>
-            </div>
-            <div className="flex justify-center mt-8">
-              <div className="w-16 h-1 bg-[#5da4ae] rounded-full"></div>
-            </div>
-          </div>
-
-          <div className="text-center mt-20">
+          <div className="text-center">
             <h2
               className="text-6xl lg:text-8xl text-black font-normal mb-8"
               style={{ fontFamily: "Corinthia, cursive" }}
@@ -119,8 +95,37 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Vision Section */}
+      <section id="vision" className="py-16 px-6 lg:px-12 bg-white scroll-mt-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center">
+            <h2
+              className="text-6xl lg:text-8xl text-black font-normal mb-8"
+              style={{ fontFamily: "Corinthia, cursive" }}
+            >
+              Our Vision
+            </h2>
+            <div className="flex justify-center mb-8">
+              <div className="w-16 h-1 bg-[#5da4ae] rounded-full"></div>
+            </div>
+            <div className="flex justify-center">
+              <p className="text-lg lg:text-xl text-[#5da4ae] max-w-4xl text-center leading-relaxed">
+                We envision a world where no woman faces cancer alone, where
+                every woman has access to safe, supportive, and affordable
+                housing, surrounded by compassion, empowered by resources, and
+                uplifted by a caring community as she walks the path to healing
+                with dignity and strength.
+              </p>
+            </div>
+            <div className="flex justify-center mt-8">
+              <div className="w-16 h-1 bg-[#5da4ae] rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Us Section */}
-      <section id="about-us" className="py-16 px-6 lg:px-12 bg-white">
+      <section id="about-us" className="py-16 px-6 lg:px-12 bg-white scroll-mt-24">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2
             className="text-6xl lg:text-8xl text-black font-normal mb-8"
