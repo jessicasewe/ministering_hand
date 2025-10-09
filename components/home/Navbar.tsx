@@ -350,9 +350,11 @@ export default function Navbar() {
               );
             })}
             <div className="pt-4">
-              <Button className="w-full border border-[#1e8e9d] bg-transparent text-[#1e8e9d] hover:bg-[#1e8e9d] hover:text-white px-8 py-3 rounded-full transition-colors font-medium">
-                Donate
-              </Button>
+              <Link href="/donate" passHref>
+                <Button className="w-full border border-[#1e8e9d] bg-transparent text-[#1e8e9d] hover:bg-[#1e8e9d] hover:text-white px-8 py-3 rounded-full transition-colors font-medium">
+                  Donate
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
