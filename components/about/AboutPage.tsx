@@ -13,7 +13,7 @@ export default function AboutPage() {
     {
       name: "Pearl Langhorne",
       position: "BOARD CHAIR",
-      imageUrl: "./placeholderpearl.jpg",
+      imageUrl: "",
     },
     {
       name: "Perry Maison",
@@ -69,7 +69,10 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Section */}
-      <section id="mission" className="py-16 px-6 lg:px-12 bg-white scroll-mt-24">
+      <section
+        id="mission"
+        className="py-16 px-6 lg:px-12 bg-white scroll-mt-24"
+      >
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <h2
@@ -96,7 +99,10 @@ export default function AboutPage() {
       </section>
 
       {/* Vision Section */}
-      <section id="vision" className="py-16 px-6 lg:px-12 bg-white scroll-mt-24">
+      <section
+        id="vision"
+        className="py-16 px-6 lg:px-12 bg-white scroll-mt-24"
+      >
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <h2
@@ -125,7 +131,10 @@ export default function AboutPage() {
       </section>
 
       {/* About Us Section */}
-      <section id="about-us" className="py-16 px-6 lg:px-12 bg-white scroll-mt-24">
+      <section
+        id="about-us"
+        className="py-16 px-6 lg:px-12 bg-white scroll-mt-24"
+      >
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2
             className="text-6xl lg:text-8xl text-black font-normal mb-8"
@@ -205,7 +214,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
           <div className="w-full lg:w-1/2">
             <img
-              src="./placeholderpearl.jpg"
+              src=""
               alt="Pearl Langhorne"
               className="rounded-2xl shadow-lg object-cover w-full h-[500px]"
             />
