@@ -26,13 +26,17 @@ export default function WhatWeDoPage() {
                 housing for women undergoing cancer treatment, especially those
                 traveling from far distances or facing financial or logistical
                 barriers. Our housing model is designed to relieve the stress of
-                distance and instability, so women can focus fully on healing.
+                distance and housing instability, so women can focus fully on
+                healing.
               </p>
               <p>
                 We provide a comfortable, home-like residence where each guest
                 is welcomed into a supportive, compassionate environment. Women
                 may stay for the duration of their treatment, with lengths of
                 stay tailored to their individual needs and treatment plans.
+              </p>
+              <p className="font-bold text-[#1e8e9d] text-xl">
+                At this time, we are only offering housing, not meals.
               </p>
             </div>
           </div>

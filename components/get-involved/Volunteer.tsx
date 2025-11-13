@@ -249,9 +249,14 @@ export default function Volunteer() {
                       <div className="w-2 h-2 bg-[#5da4ae] rounded-full mt-3"></div>
                       <p className="text-gray-700">
                         Use this{" "}
-                        <span className="text-[#5da4ae] underline cursor-pointer">
+                        <a
+                          href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0uh18RfoohbgbKrinT9U_idcJ_KzzaH5Bqk6DkkBShcfWREM8_5mjtnD5Hy_mDit0I3LC_4-tY"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#5da4ae] underline cursor-pointer hover:text-[#1e8e9d]"
+                        >
                           online calendar
-                        </span>{" "}
+                        </a>{" "}
                         to sign up for a date that works for you.
                       </p>
                     </div>
