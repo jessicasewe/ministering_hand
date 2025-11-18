@@ -18,7 +18,7 @@ export default function AboutPage() {
     {
       name: "Pearl Langhorne",
       position: "BOARD CHAIR",
-      imageUrl: "",
+      imageUrl: "/miss-pearl.png",
     },
     {
       name: "Perry Maison",
@@ -46,7 +46,7 @@ export default function AboutPage() {
     {
       name: "Pearl Langhorne",
       position: "Founder & Board Chair",
-      imageUrl: "",
+      imageUrl: "/miss-pearl.png",
       bio: [
         "With over two decades of experience in oncology patient care, Ms. Pearl Langhorne brings deep compassion, firsthand insight, and unwavering dedication to her role as the founder of Ministering Hand Incorporated.",
         "For 21 years, Pearl served as a manager at the UNC Cancer Center, where she worked closely with women battling cancer and witnessed the many obstacles they face, from emotional distress to financial hardship and housing insecurity.",
