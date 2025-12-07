@@ -527,7 +527,7 @@ export default function PartnershipPage() {
               {/* Example contact card */}
               <div className="flex items-center gap-4 bg-white p-4 rounded-lg shadow-md border border-gray-200">
                 <img
-                  src="/girl.jpg"
+                  src="/miss-pearl.png"
                   alt="Staff Member"
                   className="w-16 h-16 rounded-full object-cover"
                 />
@@ -539,7 +539,7 @@ export default function PartnershipPage() {
                     Director of Volunteer Services
                   </p>
                   <p className="text-[#1e8e9d] font-medium">
-                    ministeringhand25@gmail.com
+                    admin@ministeringhandinc.com
                   </p>
                 </div>
               </div>
@@ -679,6 +679,20 @@ export default function PartnershipPage() {
                           Together, we'll plan and deliver impactful events that
                           raise vital funds for housing, meals, and referral
                           services.
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="bg-[#bff8ff] rounded-full p-2 mt-1">
+                          <span className="text-[#1e8e9d] font-bold text-sm">
+                            4
+                          </span>
+                        </div>
+                        <p className="text-gray-700">
+                          For further inquirires, directions, guidance or more
+                          details, kindly contact us at{" "}
+                          <span className="text-[#1e8e9d] underline">
+                            support@ministeringhandinc.com
+                          </span>
                         </p>
                       </div>
                     </div>

@@ -33,7 +33,7 @@ export default function AboutPage() {
     {
       name: "LeBone Wiggins",
       position: "TREASURER",
-      imageUrl: "/board/lebone-wiggins.jpg",
+      imageUrl: "/LeBone.jpeg",
     },
     {
       name: "Dawn Kum-Gray",
@@ -239,10 +239,15 @@ export default function AboutPage() {
                 key={index}
                 className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-96"
               >
-                <div
-                  className="absolute inset-0 bg-cover bg-center bg-gray-300"
+                <img
+                  src={member.imageUrl}
+                  alt={member.name}
+                  className="absolute inset-0 w-full h-full object-cover bg-gray-300"
                   style={{
-                    backgroundImage: `url('${member.imageUrl}')`,
+                    objectPosition:
+                      member.name === "LeBone Wiggins"
+                        ? "center 0.5%"
+                        : "center",
                   }}
                 />
 
