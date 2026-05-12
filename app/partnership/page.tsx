@@ -621,7 +621,7 @@ export default function PartnershipPage() {
               <div className="grid lg:grid-cols-2 gap-12 items-start">
                 {/* Left side - Stats and Steps */}
                 <div className="space-y-8">
-                  <div className="bg-white rounded-3xl p-8 shadow-xl border border-[#bff8ff]">
+                  {/* <div className="bg-white rounded-3xl p-8 shadow-xl border border-[#bff8ff]">
                     <div className="grid grid-cols-2 gap-6">
                       {impactStats.map((stat, index) => (
                         <div
@@ -640,7 +640,7 @@ export default function PartnershipPage() {
                         </div>
                       ))}
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="bg-white rounded-3xl p-8 shadow-xl border border-[#bff8ff]">
                     <h3 className="text-xl font-bold text-gray-900 mb-6">

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Corinthia } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
 import Navbar from "@/components/home/Navbar";
 import CurvedFooter from "@/components/home/Footer";
 
@@ -37,7 +36,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <CustomCursor />
         {children}
         <CurvedFooter />
       </body>
