@@ -75,7 +75,7 @@ export default function PartnershipPage() {
   }, [submitted]);
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const target = e.target as HTMLInputElement | HTMLTextAreaElement;
     const { name, value, type } = target;
@@ -115,7 +115,7 @@ export default function PartnershipPage() {
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         templateParams,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
       )
       .then(
         (response) => {
@@ -126,7 +126,7 @@ export default function PartnershipPage() {
         (err) => {
           console.error("FAILED...", err);
           alert("Something went wrong. Please try again later.");
-        }
+        },
       );
   };
 

@@ -23,6 +23,9 @@ const corinthia = Corinthia({
 export const metadata: Metadata = {
   title: "Ministering Hand Inc",
   description: "Sheltering Hope, Nurturing Strength",
+  icons: {
+    icon: "/ministeringhandlogo.png",
+  },
 };
 
 export default function RootLayout({
